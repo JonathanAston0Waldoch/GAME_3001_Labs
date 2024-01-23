@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_MyAssets\_Scripts\SceneChangeButton.cs" />
+    <Compile Include="Assets\_MyAssets\_Scripts\AgentObject.cs" />
     <Compile Include="Assets\_MyAssets\_Scripts\ClickDragScript.cs" />
     <Compile Include="Assets\_MyAssets\_Scripts\AgentMovement.cs" />
     <Compile Include="Assets\_MyAssets\_Scripts\SceneLoader.cs" />
