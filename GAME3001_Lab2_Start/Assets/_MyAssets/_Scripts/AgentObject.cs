@@ -13,7 +13,7 @@ public class AgentObject : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Start()
+    public void Start()
     {
         Debug.Log("starting Agent ...");
         TargetPosition = m_target.position;
