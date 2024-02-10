@@ -16,6 +16,7 @@ public class ButtonListener : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("1 on the keyboard was pressed!");
+            
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
