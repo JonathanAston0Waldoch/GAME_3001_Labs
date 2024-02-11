@@ -68,8 +68,7 @@ public class Function3 : AgentObject3
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            Agent3.SetActive(false);
-            Target3.SetActive(false);
+            ResetScene(1);
         }
     }
 }

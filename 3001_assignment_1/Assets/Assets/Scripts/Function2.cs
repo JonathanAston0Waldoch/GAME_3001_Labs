@@ -28,6 +28,11 @@ public class Function2 : AgentObject2
         transform.position = Vector3.MoveTowards(transform.position, TargetPosition, moveSpeed * Time.deltaTime);
         rb2.velocity = desiredVelocity;
     }
+    public void ResetScene(int sceneIndextoLoad)
+    {
+        sceneIndextoLoad = 1;
+        SceneLoader.LoadSceneByIndex(sceneIndextoLoad);
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -38,8 +43,7 @@ public class Function2 : AgentObject2
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            Agent2.SetActive(false);
-            Target2.SetActive(false);
+            ResetScene(1);
         }
     }
 }
