@@ -50,7 +50,11 @@ public class Function1 : AgentObject
             Target1.SetActive(false);
         }
     }
-    // Update is called once per frame
+    public void ResetScene(int sceneIndextoLoad)
+    {
+        sceneIndextoLoad = 1;
+        SceneLoader.LoadSceneByIndex(sceneIndextoLoad);
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -63,8 +67,7 @@ public class Function1 : AgentObject
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            Agent1.SetActive(false);
-            Target1.SetActive(false);
+            ResetScene(1);
         }
     }
 }

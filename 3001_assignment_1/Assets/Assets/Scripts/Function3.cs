@@ -52,6 +52,11 @@ public class Function3 : AgentObject3
             i--;
         }
     }
+    public void ResetScene(int sceneIndextoLoad)
+    {
+        sceneIndextoLoad = 1;
+        SceneLoader.LoadSceneByIndex(sceneIndextoLoad);
+    }
     // Update is called once per frame
     void Update()
     {

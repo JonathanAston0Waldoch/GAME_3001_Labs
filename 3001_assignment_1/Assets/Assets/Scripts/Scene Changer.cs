@@ -6,6 +6,8 @@ public class SceneChanger : MonoBehaviour
 {
    public void ChangeSceneTo(int sceneIndextoLoad)
     {
+        
         SceneLoader.LoadSceneByIndex(sceneIndextoLoad);
     }
+    
 }
